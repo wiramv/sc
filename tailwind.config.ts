@@ -11,6 +11,12 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        "lightpurple":"rgb(102, 108, 255)",
+        "darkpurple":"rgb(48, 51, 78)",
+        "borderpurple":"rgba(234, 234, 255, 0.12)",
+        "primarygreen":"rgb(114, 225, 40)",
+        "submenu":"rgba(234, 234, 255, 0.38)",
+        "togglepurple":"rgb(120, 126, 255)"
       },
     },
   },

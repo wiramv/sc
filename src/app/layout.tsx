@@ -1,6 +1,18 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import Footer from "./components/Footer";
+import Avatar from "./components/Avatar";
+
+import { Poppins } from "next/font/google";
+import Menus from "./components/Menus";
+
+const poppins = Poppins({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-poppins",
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+});
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -24,11 +36,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${poppins.variable}`}>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <div className="flex">
+          <Menus />
+          {children}
+        </div>
+        <Avatar />
+        <Footer />
       </body>
     </html>
   );
