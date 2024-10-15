@@ -35,5 +35,6 @@ export const options:NextAuthOptions = {
     ],
     session: {
         strategy: "jwt" 
-      }
+      },
+      debug:true
 }
