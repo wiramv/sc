@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState, useRef, useEffect } from "react";
 import ava from "xxx/sc.svg";
+import { signOut } from "next-auth/react";
 
 // icons
 import { LiaUserSolid } from "react-icons/lia";
@@ -77,13 +78,13 @@ export default function Avatar() {
               );
             })}
             <div className="h-[1px] w-full bg-borderpurple"></div>
-            <Link
-              href={""}
+            <button
+              onClick={()=> signOut()}
               className="w-56 h-10 px-5 items-center hover:bg-borderpurple flex gap-3 justify-start"
             >
               <TbLogout className="text-xl" />
               Logout
-            </Link>
+            </button>
           </div>
         </div>
       )}

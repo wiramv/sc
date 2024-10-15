@@ -16,7 +16,9 @@ const config: Config = {
         "borderpurple":"rgba(234, 234, 255, 0.12)",
         "primarygreen":"rgb(114, 225, 40)",
         "submenu":"rgba(234, 234, 255, 0.38)",
-        "togglepurple":"rgb(120, 126, 255)"
+        "togglepurple":"rgb(120, 126, 255)",
+        "report-bg":"#30334E",
+        "sub-text":"#EAEAFE99"
       },
     },
   },
